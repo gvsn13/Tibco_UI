@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(206, 203, 203);
+    height: 600px;
+}
+.display{
+    height: 150px;
+    background-color: rgb(230, 226, 226);
+}
