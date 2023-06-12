@@ -17,7 +17,7 @@ async function getqueue(queueName){
         "Access-Control-Allow-Origin": "*",
         }
     })
-    .then(resp => resp.json());
+    .then((resp) => resp.json());
     console.log(response);
 
 }
