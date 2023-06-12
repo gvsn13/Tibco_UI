@@ -15,12 +15,10 @@ async function getqueue(queueName){
         headers: {
         Authorization: "Bearer CIC~OXMxtvy3D60qvyINr0clRqIL",
         "Access-Control-Allow-Origin": "*",
-        //"Access-Control-Allow-Methods": "GET",
-        // "Access-Control-Allow-Headers": X-PINGOTHER,
         }
     })
-    .then(resp => resp.json())
-    .then(json=>console.log(JSON.stringify(json)));
+    .then(resp => resp.json());
+    console.log(response);
 
 }
 
