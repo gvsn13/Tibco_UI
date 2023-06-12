@@ -11,8 +11,12 @@ async function getqueue(queueName){
 
     const response = await fetch(url, {
         method: 'GET',
+        mode: "no-cors",
         headers: {
-        Authorization: "Bearer CIC~OXMxtvy3D60qvyINr0clRqIL"
+        Authorization: "Bearer CIC~OXMxtvy3D60qvyINr0clRqIL",
+        "Access-Control-Allow-Origin": "*",
+        //"Access-Control-Allow-Methods": "GET",
+        // "Access-Control-Allow-Headers": X-PINGOTHER,
         }
     })
     .then(resp => resp.json())
